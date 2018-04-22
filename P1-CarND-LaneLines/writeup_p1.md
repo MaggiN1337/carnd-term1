@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 My pipeline consisted of 5 steps. 
 
 First, I converted the images to grayscale:
-![grayscale]: ./gray.png
+![grayscale]:gray.png
 
 Then I added a gaussian filter with a kernel of 3, as I figured out, that 3 brought the best result:
 [gaussian]: ./gaussian.png
