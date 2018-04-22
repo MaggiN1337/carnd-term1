@@ -19,19 +19,19 @@ The goals / steps of this project are the following:
 My pipeline consisted of 5 steps. 
 
 First, I converted the images to grayscale:
-![grayscale]:(/gray.png)
+<img src="gray.png">
 
 Then I added a gaussian filter with a kernel of 3, as I figured out, that 3 brought the best result:
-[gaussian]: ./gaussian.png
+<img src="gaussian.png">
 
 After that I used the Canny Edge Detection with a low threshold of 100 and a high treshold of 150. This was the best result over all images and videos:
-[canny_edge]: ./canny_edge.png
+<img src="canny_edge.png">
 
 Then I cut out my region of interest. I decided to start from to bottom left and right corner with an offset of 80 pixels. And in the middle of the picture (height/2) with an offset of 300 pixels from left and right. This step should be more dynamic in the future, to be capable of different lane width and different image scales. 
-[region]: ./region_of_interest.png
+<img src="region_of_interest.png">
 
 The fifth step is the Hough Transformation.
-[hough]: ./hough.png
+<img src="hough.png">
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by the following steps:
 * calculate the slope of each recognzied line
