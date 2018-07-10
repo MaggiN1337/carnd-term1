@@ -19,8 +19,8 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/distribution_testset.png "Visualization"
-[image2]: ./examples/normalization.png "Normalization"
+[image1]: ./test/distribution_testset.png "Visualization"
+[image2]: ./test/normalization.png "Normalization"
 [image4]: ./test/2.jpg "Speed limit 50 km/h"
 [image5]: ./test/12.jpg "Priority road"
 [image6]: ./test/13.jpg "Yield"
