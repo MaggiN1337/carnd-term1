@@ -19,13 +19,15 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/distribution_testset.png "Visualization"
-[image2]: ./examples/normalization.png "Normalization"
+[image1]: ./test/distribution_testset.png "Visualization"
+[image2]: ./test/normalization.png "Normalization"
 [image4]: ./test/2.jpg "Speed limit 50 km/h"
 [image5]: ./test/12.jpg "Priority road"
 [image6]: ./test/13.jpg "Yield"
 [image7]: ./test/14.jpg "Stop"
 [image8]: ./test/33.jpg "Right turn only"
+[image9]: ./test/accuracy.png "Accuracy"
+[image3]: ./test/loss.png "Loss"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -100,6 +102,10 @@ To prevent from overfitting, I added the L2 regularization, but it didn't boost 
 
 Compared to the Adam Optimizer, the Stochastic Gradient Descend had a bad performance. The increase of the accuracy was very slow, especially with a learn-rate of 0.001. With a learn rate of 0.01, the accuracy reached only 93,1% after 100 epochs. I didn't wait for the result of a learn-rate of 0.001, as the accuracy was still at 85% after 89 Epochs.
 The Adam Optimizer had a fast increase and a good result with a learn-rate of 0.01 and 0.001. 
+
+I also visualized the learning rate:
+![alt text][image9]
+![alt text][image3]
 
 #### 4. The approach taken for finding a solution 
 
